@@ -1,0 +1,76 @@
+🔹 1. Best Case
+
+👉 The scenario where the algorithm takes the least amount of time.
+It happens when the desired condition is met immediately.
+
+Example: Linear Search
+
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+
+Best case: Target is the first element → Only 1 comparison → O(1).
+
+Example: Binary Search
+
+Best case: Middle element is the target → 1 comparison → O(1).
+
+🔹 2. Average Case
+
+👉 The scenario for a typical/random input.
+It is usually calculated by taking the expected number of operations over all inputs.
+
+Example: Linear Search
+
+If the target is equally likely to be anywhere in the list:
+
+On average, we search half of the array → ~n/2 comparisons → O(n).
+
+Example: Binary Search
+
+On average, it will take log₂(n) steps → O(log n).
+
+🔹 3. Worst Case
+
+👉 The scenario where the algorithm takes the maximum possible time.
+This happens when the target is at the last position (or not present at all).
+
+Example: Linear Search
+
+Worst case: Target is last element or missing → n comparisons → O(n).
+
+Example: Binary Search
+
+Worst case: Target not found after log₂(n) steps → O(log n).
+
+🔹 4. How We Decide (Criteria)
+
+Look at input position:
+
+First element → Best case.
+
+Random element → Average case.
+
+Last element / not present → Worst case.
+
+Look at structure of algorithm:
+
+Divide & Conquer (Binary Search, Merge Sort) → Best = O(1), Worst = O(log n) or O(n log n).
+
+Nested loops (Bubble Sort) → Best = O(n) if already sorted, Worst = O(n²).
+
+✅ Example Table (Linear vs Binary Search)
+Algorithm	Best Case	Average Case	Worst Case
+Linear Search	O(1)	O(n)	O(n)
+Binary Search	O(1)	O(log n)	O(log n)
+
+
+Divide and Conquer algorithm is a problem-solving strategy that involves.
+
+Divide : Break the given problem into smaller non-overlapping problems.
+Conquer : Solve Smaller Problems
+Combine : Use the Solutions of Smaller Problems to find the overall result.
+
