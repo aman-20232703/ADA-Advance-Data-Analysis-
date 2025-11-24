@@ -53,3 +53,4 @@ if __name__ == "__main__":
     capacity = 50
 
     print(fractionalKnapsack(val, wt, capacity))
+

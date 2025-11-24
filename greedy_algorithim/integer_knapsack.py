@@ -81,3 +81,5 @@ if __name__ == "__main__":
     W = 4
 
     print(knapsack(W, val, wt))
+    
+    

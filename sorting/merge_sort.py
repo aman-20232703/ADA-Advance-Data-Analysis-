@@ -47,3 +47,4 @@ def merge(left, right):
 arr=[64,25,12,22,11]
 x=merge_sort(arr)
 print(x)
+

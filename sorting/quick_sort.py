@@ -30,3 +30,4 @@ def quick_sort(arr):
 arr=[64,25,22,12,11]
 x=quick_sort(arr)
 print(x)
+

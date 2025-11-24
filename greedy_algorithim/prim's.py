@@ -48,3 +48,4 @@ n = 4
 mst, cost = prim(n, adj)
 print("MST edges:", mst)
 print("Total cost:", cost)
+
