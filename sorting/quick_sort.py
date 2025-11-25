@@ -18,14 +18,14 @@ Worst Case: (O(n²)), Occurs when the smallest or largest element is always chos
 def quick_sort(arr):
     if len(arr)<=1:
         return arr
+    else:
+        pivot=arr[len(arr)//2]
+        # print(pivot)
+        left=[x for x in arr if x<pivot]
+        middle=[x for x in arr if x==pivot]
+        right=[x for x in arr if x>pivot]
     
-    pivot=arr[len(arr)//2]
-    print(pivot)
-    left=[x for x in arr if x<pivot]
-    middle=[x for x in arr if x==pivot]
-    right=[x for x in arr if x>pivot]
-    
-    return quick_sort(left)+quick_sort(middle)+quick_sort(right)
+        return quick_sort(left)+quick_sort(middle)+quick_sort(right)
 
 arr=[64,25,22,12,11]
 x=quick_sort(arr)
