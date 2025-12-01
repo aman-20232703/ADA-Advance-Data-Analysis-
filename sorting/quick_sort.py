@@ -21,9 +21,9 @@ def quick_sort(arr):
     else:
         pivot=arr[len(arr)//2]
         # print(pivot)
-        left=[x for x in arr if x<pivot]
-        middle=[x for x in arr if x==pivot]
         right=[x for x in arr if x>pivot]
+        middle=[x for x in arr if x==pivot]
+        left=[x for x in arr if x<pivot]
     
         return quick_sort(left)+quick_sort(middle)+quick_sort(right)
 
