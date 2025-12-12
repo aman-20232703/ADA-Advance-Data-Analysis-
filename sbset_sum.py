@@ -21,7 +21,7 @@ def isSubsetSumRec(arr, n, sum):
   
     # Base Cases
     if sum == 0:
-        return True 
+        return True
     if n == 0:
         return False
 
