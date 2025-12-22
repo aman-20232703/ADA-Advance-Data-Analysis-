@@ -25,7 +25,6 @@ def insertion_sort(arr):
         while j>=0 and arr[j]>key:
             arr[j+1]=arr[j]
             j-=1
-            
         arr[j+1]=key
     return arr
 arr=[64,25,12,22,11]
